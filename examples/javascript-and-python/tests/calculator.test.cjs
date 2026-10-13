@@ -1,0 +1,2 @@
+const assert=require('node:assert/strict'); const {evaluate}=require('../calculator.js');
+assert.equal(evaluate('2+3*(4-1)^2'),29); assert.equal(evaluate('2^3^2'),512); assert.equal(evaluate('-(2+3)'),-5); assert.equal(evaluate('7%4'),3); assert.equal(evaluate('0.1+0.2').toFixed(1),'0.3'); for(const input of ['1/0','1%0','(','1 2','alert(1)','1..2','.','x'.repeat(4097)]) assert.throws(()=>evaluate(input)); assert.throws(()=>evaluate(2)); console.log('PASS: 14 calculator assertions');

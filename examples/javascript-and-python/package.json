@@ -1,0 +1,16 @@
+{
+  "name": "makma-code-samples",
+  "version": "1.0.0",
+  "main": "gemini.js",
+  "scripts": {
+    "test": "node tests/calculator.test.cjs",
+    "calculator": "node calculator.js",
+    "gemini": "node gemini.js"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
